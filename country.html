@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries API</title>
+    <link rel="stylesheet" href="country.css">
+</head>
+<body>
+    <header>
+        <p>Where in the world</p>
+        <button>
+            <ion-icon name="moon-outline"></ion-icon>
+            <span>Dark Mode</span>
+        </button>
+    </header>
+        <main>
+            <div class="main-head">
+                <form action="">
+
+                    <label for="country"> <ion-icon name="search"></ion-icon> </label>
+                    <input type="text" name="country" id="search-term" placeholder="searchfor a country">
+                </form>
+                <select name="region" id="region">
+                    <option value="">Select Region</option>
+                    <option value="africa">Africa</option>
+                    <option value="asia">Asia</option>
+                    <option value="europe">Europe</option>
+                    <option value="oceania">Oceania</option>
+                  
+                </select>
+            </div>
+            <div class="single-country" id="single-country"></div>
+            <div class="all-countries" id="all-countries"></div>
+           
+        </main>
+        <script src="country.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
